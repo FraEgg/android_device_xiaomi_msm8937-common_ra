@@ -359,6 +359,11 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml
+
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
