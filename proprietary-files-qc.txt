@@ -304,7 +304,7 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so|82ad748b7abeb20e226ea969cd7dbc2b7021f
 vendor/lib/hw/gatekeeper.msm8937.so:vendor/lib/hw/gatekeeper.msm8937.so
 vendor/lib64/hw/gatekeeper.msm8937.so:vendor/lib64/hw/gatekeeper.msm8937.so
 
-# GPS - from Panther
+# GPS - from LA.UM.8.6.r1-01900-89xx.0
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qualcomm.location.xml
 etc/permissions/izat.xt.srv.xml
@@ -323,6 +323,7 @@ lib64/vendor.qti.gnss@1.1.so
 lib64/vendor.qti.gnss@1.2.so
 lib64/vendor.qti.gnss@2.0.so
 lib64/vendor.qti.gnss@2.1.so
+vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so
 lib64/liblocationservice_jni.so
 lib64/libxt_native.so
 vendor/bin/loc_launcher
@@ -330,8 +331,8 @@ vendor/bin/lowi-server
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/hw/vendor.qti.gnss@1.0-service
-vendor/etc/init/vendor.qti.gnss@1.0-service.rc
 vendor/etc/cacert_location.pem
+vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
 vendor/etc/xtra_root_cert.pem
 vendor/lib/hw/vendor.qti.gnss@1.0-impl.so
 -vendor/lib/libloc_api_v02.so
@@ -365,16 +366,13 @@ vendor/lib/vendor.qti.gnss@2.0.so
 vendor/lib/vendor.qti.gnss@2.1.so
 vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
 -vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_ds_api.so
+vendor/lib64/libqdma_file_agent.s
 vendor/lib64/libalarmservice_jni.so
 vendor/lib64/libdataitems.so
-vendor/lib64/libdrplugin_client.so
-vendor/lib64/libDRPlugin.so
+vendor/lib64/libqdma_file_agent.so
 vendor/lib64/lib_drplugin_server.so
-vendor/lib64/libevent_observer.so
 vendor/lib64/libflp.so
 vendor/lib64/libgdtap.so
-vendor/lib64/libgeofence.so
 vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so
 vendor/lib64/liblbs_core.so
@@ -384,11 +382,11 @@ vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libquipc_os_api.so
-vendor/lib64/libulp2.so
 vendor/lib64/libslimclient.so
 vendor/lib64/libxtadapter.so
-vendor/lib64/libxtwifi_ulp_adaptor.so
 vendor/lib64/vendor.qti.gnss@1.0.so
+vendor/lib64/vendor.qti.gnss@3.0-service.so
+vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@1.1.so
 vendor/lib64/vendor.qti.gnss@1.2.so
 vendor/lib64/vendor.qti.gnss@2.0.so
@@ -439,6 +437,7 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libOpenCL.so
+vendor/lib64/libpdmapper.so
 vendor/lib64/librs_adreno_sha1.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/libRSDriver_adreno.so
