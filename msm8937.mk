@@ -374,6 +374,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
+# Mobile Network Settingvs v2
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.vendor.ims.dropset_feature=0 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common_system \
