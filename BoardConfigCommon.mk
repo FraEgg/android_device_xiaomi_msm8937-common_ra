@@ -221,7 +221,7 @@ TARGET_RECOVERY_FSTAB 		 := $(VENDOR_PATH)/rootdir/fstab.qcom
 # SELinux
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 SELINUX_IGNORE_NEVERALLOWS := true
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Wi-Fi
