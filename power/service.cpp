@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
- * Copyright (C) 2017-2019 The LineageOS Project
+ * Copyright (C) 2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 #define LOG_TAG "android.hardware.power@1.1-service.custom"
 
 // #define LOG_NDEBUG 0
@@ -22,6 +22,9 @@
 #include <android/log.h>
 #include <hidl/HidlTransportSupport.h>
 #include <hardware/power.h>
+#ifdef ARCH_ARM_32
+#include <hwbinder/ProcessState.h>
+#endif
 #include "Power.h"
 
 using android::sp;
@@ -37,6 +40,9 @@ using android::hardware::power::V1_1::IPower;
 using android::hardware::power::V1_1::implementation::Power;
 
 int main() {
+#ifdef ARCH_ARM_32
+    android::hardware::ProcessState::initWithMmapSize((size_t)16384);
+#endif
 
     status_t status;
     android::sp<IPower> service = nullptr;
