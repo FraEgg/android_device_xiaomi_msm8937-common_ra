@@ -405,9 +405,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndk-sp
 
-# Vold
+# HW crypto
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-lineage
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # WiFi
 PRODUCT_PACKAGES += \
@@ -447,4 +447,3 @@ $(call inherit-product-if-exists, vendor/xiaomi/msm8937-common/msm8937-common-ve
 
 # MindTheGapps
 $(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
-
