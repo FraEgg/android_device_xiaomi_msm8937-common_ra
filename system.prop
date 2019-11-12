@@ -82,6 +82,7 @@ debug.sdm.support_writeback=0
 
 # DRM
 drm.service.enabled=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Fingerprint
 persist.qfp=false
