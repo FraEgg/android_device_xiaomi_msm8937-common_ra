@@ -760,8 +760,11 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/radio/qcril_database/qcril.db
 
-# Radio - QTI Extension - from sakura
+# Radio - QTI Extension - - from K20 Pro
 -framework/qti-telephony-common.jar
+
+#Radio - from LA.UM.8.6.r1-01900-89xx.0
+vendor/bin/adpl
 
 # Radio - IMS - from Panther
 -app/imssettings/imssettings.apk
