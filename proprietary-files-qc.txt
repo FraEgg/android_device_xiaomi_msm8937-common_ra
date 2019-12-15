@@ -22,12 +22,13 @@ vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 
-# Alarm - from TA-1024
+# Alarm - from LA.UM.8.6.r1-01900-89xx.0
 -framework/vendor.qti.hardware.alarm-V1.0-java.jar
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
+vendor/bin/power_off_alarm
 vendor/lib/vendor.qti.hardware.alarm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
@@ -468,7 +469,8 @@ vendor/lib/libadpcmdec.so
 vendor/lib/libsmwrapper.so
 vendor/lib64/hw/sound_trigger.primary.msm8937.so
 
-# Media - from TA-1024
+# Media - from LA.UM.8.6.r1-01900-89xx.0
+lib/extractors/libmmparserextractor
 lib/extractors/libmmparser.so
 lib/libFileMux.so
 lib/libmmosal.so
@@ -481,6 +483,7 @@ lib64/libmmosal.so
 lib64/libmmparser_lite.so
 lib64/libOmxMux.so
 lib64/vendor.qti.hardware.vpp@1.1.so
+vendor/lib/libOmxG711Dec.so
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
 vendor/lib/libI420colorconvert.so
@@ -881,13 +884,15 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # Wi-Fi - from Panther
 vendor/bin/wcnss_service
 
-# WiFi Display - from TA-1024
+# WiFi Display - from LA.UM.8.6.r1-01900-89xx.0
 bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfig.xml
 etc/wfdconfigsink.xml
 -framework/WfdCommon.jar
 -priv-app/WfdService/WfdService.apk
+lib/libwfdcommonutils.so
+lib/libwfdnative.so
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/libmmrtpdecoder.so
 lib/libmmrtpencoder.so
