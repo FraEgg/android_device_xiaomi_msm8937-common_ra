@@ -37,7 +37,6 @@ LOCAL_SHARED_LIBRARIES := \
     libcutils \
     libdl \
     libhidlbase \
-    libhidltransport \
     liblog \
     libutils \
     vendor.lineage.livedisplay@2.0
