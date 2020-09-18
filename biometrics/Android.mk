@@ -14,8 +14,10 @@ LOCAL_SHARED_LIBRARIES := \
     libcutils \
     liblog \
     libhidlbase \
+    libhidltransport \
     libhardware \
     libutils \
+    libhwbinder \
     android.hardware.biometrics.fingerprint@2.1
 
 LOCAL_CFLAGS += -DUSE_FINGERPRINT_2_0
@@ -36,8 +38,10 @@ LOCAL_SHARED_LIBRARIES := \
     libcutils \
     liblog \
     libhidlbase \
+    libhidltransport \
     libhardware \
     libutils \
+    libhwbinder \
     android.hardware.biometrics.fingerprint@2.1
 
 include $(BUILD_EXECUTABLE)
